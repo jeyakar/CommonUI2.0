@@ -1,30 +1,127 @@
-/*!
- *  Font Awesome 3.2.0
- *  the iconic font designed for Bootstrap
- *  ------------------------------------------------------------------------------
- *  The full suite of pictographic icons, examples, and documentation can be
- *  found at http://fontawesome.io.  Stay up to date on Twitter at
- *  http://twitter.com/fontawesome.
- *
- *  License
- *  ------------------------------------------------------------------------------
- *  - The Font Awesome font is licensed under SIL OFL 1.1 -
- *    http://scripts.sil.org/OFL
- *  - Font Awesome CSS, LESS, and SASS files are licensed under MIT License -
- *    http://opensource.org/licenses/mit-license.html
- *  - Font Awesome documentation licensed under CC BY 3.0 -
- *    http://creativecommons.org/licenses/by/3.0/
- *  - Attribution is no longer required in Font Awesome 3.0, but much appreciated:
- *    "Font Awesome by Dave Gandy - http://fontawesome.io"
- *
- *  Author - Dave Gandy
- *  ------------------------------------------------------------------------------
- *  Email: dave@fontawesome.io
- *  Twitter: http://twitter.com/byscuits
- *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
- */
-/* FONT PATH
- * -------------------------- */
+﻿html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 @font-face {
   font-family: 'FontAwesome';
   src: url('../font/fontawesome-webfont.eot?v=3.2.0');
@@ -32,8 +129,6 @@
   font-weight: normal;
   font-style: normal;
 }
-/* FONT AWESOME CORE
- * -------------------------- */
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -50,17 +145,14 @@
   cursor: default;
   speak: none;
 }
-/* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
   font-size: 1.3333333333333333em;
 }
-/* makes sure icons active on rollover in links */
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline;
 }
-/* increased font size for icon-large */
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
@@ -156,9 +248,6 @@ a [class*=" icon-"] {
 [class*=" icon-"].pull-right {
   margin-left: .3em;
 }
-/* BOOTSTRAP SPECIFIC CLASSES
- * -------------------------- */
-/* Bootstrap 2.0 sprites.less reset */
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline;
@@ -171,7 +260,6 @@ a [class*=" icon-"] {
   background-repeat: repeat;
   margin-top: 0;
 }
-/* more sprites.less reset */
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 .nav-pills > .active > a > [class*=" icon-"],
@@ -187,7 +275,6 @@ a [class*=" icon-"] {
 .dropdown-submenu:hover > a > [class*=" icon-"] {
   background-image: none;
 }
-/* keeps Bootstrap styles with and without icons the same */
 .btn [class^="icon-"].icon-large,
 .nav [class^="icon-"].icon-large,
 .btn [class*=" icon-"].icon-large,
@@ -244,9 +331,6 @@ a [class*=" icon-"] {
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: .2em;
 }
-/* EXTRAS
- * -------------------------- */
-/* Stacked and layered icon */
 .icon-stack {
   position: relative;
   display: inline-block;
@@ -270,7 +354,6 @@ a [class*=" icon-"] {
   font-size: 2em;
   *line-height: 1em;
 }
-/* Animated rotating icon */
 .icon-spin {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
@@ -322,7 +405,6 @@ a .icon-spin {
     transform: rotate(359deg);
   }
 }
-/* Icon rotations and mirroring */
 .icon-rotate-90:before {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -361,7 +443,6 @@ a .icon-spin {
   -o-transform: scale(1, -1);
   transform: scale(1, -1);
 }
-/* ensure rotation occurs inside anchor tags */
 a .icon-rotate-90:before,
 a .icon-rotate-180:before,
 a .icon-rotate-270:before,
@@ -369,8 +450,6 @@ a .icon-flip-horizontal:before,
 a .icon-flip-vertical:before {
   display: inline-block;
 }
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-   readers do not read off random characters that represent icons */
 .icon-glass:before {
   content: "\f000";
 }
@@ -1468,4 +1547,138 @@ a .icon-flip-vertical:before {
 }
 .icon-renren:before {
   content: "\f18b";
+}
+/* colors */
+/* font */
+/* text sizes */
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #ffffff;
+}
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-size: 18px;
+}
+[class^="icon-"].small,
+[class*=" icon-"].small {
+  font-size: 14px;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid #aaa;
+  width: 200px;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus {
+  outline: 0;
+  border: 1px solid #0097d1;
+  box-shadow: 0px 0px 1px #0097d1;
+}
+input[type=text]:disabled,
+input[type=password]:disabled,
+textarea:disabled,
+select:disabled {
+  background: #ddd;
+  color: #999;
+}
+input[type=text].error,
+input[type=password].error,
+textarea.error,
+select.error {
+  border: 1px solid red;
+}
+input[type=text].error:focus,
+input[type=password].error:focus,
+textarea.error:focus,
+select.error:focus {
+  outline: 0;
+  box-shadow: 0px 0px 2px red;
+}
+textarea {
+  height: 80px;
+  resize: none;
+}
+.err_msg {
+  color: red;
+}
+.err_msg.inline {
+  padding: 5px 0px;
+}
+header {
+  zoom: 1;
+  background: #0097d1;
+  padding: 10px;
+}
+header:before {
+  content: '';
+  display: block;
+}
+header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#page_content .page_content,
+#page_content .left_page_content,
+#page_content .right_page_content {
+  min-height: 500px;
+}
+#page_content .left_page_content {
+  width: 70%;
+  float: left;
+}
+#page_content .right_page_content {
+  width: 30%;
+  float: right;
 }
