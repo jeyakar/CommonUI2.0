@@ -1669,6 +1669,9 @@ header:after {
   display: table;
   clear: both;
 }
+#page_content {
+  min-width: 1000px;
+}
 #page_content .page_content,
 #page_content .left_page_content,
 #page_content .right_page_content {

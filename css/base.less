@@ -1,3 +1,7 @@
+//to be removed after development
+@import "reset.less";
+@import "font-awesome.min.less";
+//don't Remove this import
 @import "vars.less";
 @import "less-mixins.less";
 
@@ -124,6 +128,8 @@ header {
 }
 
 #page_content {
+    min-width: 1000px;
+
     .page_content, .left_page_content, .right_page_content {
         min-height: 500px;
     }
@@ -131,6 +137,7 @@ header {
     .left_page_content {
         width: 70%;
         float: left;
+
     }
 
     .right_page_content {
