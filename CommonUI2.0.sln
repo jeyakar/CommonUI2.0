@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CommonUI2.0", ".", "{FEB3A6E0-AA03-4D43-A7AA-7FBD5765708E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/CommonUI2.0"
+		Debug.AspNetCompiler.PhysicalPath = "..\CommonUI2.0\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CommonUI2.0\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CommonUI2.0"
+		Release.AspNetCompiler.PhysicalPath = "..\CommonUI2.0\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CommonUI2.0\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3921"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEB3A6E0-AA03-4D43-A7AA-7FBD5765708E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB3A6E0-AA03-4D43-A7AA-7FBD5765708E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,20 +1,95 @@
-/* CSS crunched with Crunch - http://crunchapp.net/ */
-h1.presentation{background:#024b89;padding:10px;border-bottom:1px solid #333;margin:0px;color:#fff;font-size:1.6em;font-weight:normal}
-h2.presentation{background:#eee;border-bottom:1px solid #ddd;border-top:1px solid #ddd;padding:10px;margin:0px;font-size:1.4em;font-weight:normal}
-h3.presentation{padding:10px 30px 5px;margin:10px 0px 0px 0px;font-size:1.4em;color:#0097d1;font-weight:normal}
-.display.presentation{background:#fff;padding:10px 10px 20px;margin:0px 20px;border-bottom:1px dashed #ddd}
-section .display.presentation:last-child{border-bottom:0px}
-.colors div,.colors span{width:100px;height:100px;display:inline-block;margin-right:20px}
-.colors span{padding:2px 0px;height:15px;font-size:14px}
-.colors .color1{background:#024b89}
-.colors .color2{background:#0097d1}
-.colors .color3{background:#ffc248}
-.colors .color4{background:#00afe9}
-.colors .color5{background:#f67232}
-.colors .color6{background:#b3c347}
-.colors .color7{background:#f0272a}
-.colors .color8{background:#61267f}
-.colors .color9{background:#9faab0}
-.icons i{padding:5px;margin:5px;display:inline-block}.icons i:hover{color:#666;cursor:pointer}
-input[type=text],input[type=password],textarea{margin-right:10px}
-.controls span{display:inline-block;margin-right:10px;vertical-align:top}
+﻿/* colors */
+/* font */
+/* text sizes */
+h1.presentation {
+  background: #024b89;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  margin: 0px;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+h2.presentation {
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  margin: 0px;
+  font-size: 1.4em;
+  font-weight: normal;
+}
+h3.presentation {
+  padding: 10px 30px 5px;
+  margin: 10px 0px 0px 0px;
+  font-size: 1.4em;
+  color: #0097d1;
+  font-weight: normal;
+}
+.display.presentation {
+  background: #fff;
+  padding: 10px 10px 20px;
+  margin: 0px 20px;
+  border-bottom: 1px dashed #ddd;
+}
+section .display.presentation:last-child {
+  border-bottom: 0px;
+}
+.colors div,
+.colors span {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.colors span {
+  padding: 2px 0px;
+  height: 15px;
+  font-size: 14px;
+}
+.colors .color1 {
+  background: #024b89;
+}
+.colors .color2 {
+  background: #0097d1;
+}
+.colors .color3 {
+  background: #ffc248;
+}
+.colors .color4 {
+  background: #00afe9;
+}
+.colors .color5 {
+  background: #f67232;
+}
+.colors .color6 {
+  background: #b3c347;
+}
+.colors .color7 {
+  background: #f0272a;
+}
+.colors .color8 {
+  background: #61267f;
+}
+.colors .color9 {
+  background: #9faab0;
+}
+.icons i {
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+.icons i:hover {
+  color: #666;
+  cursor: pointer;
+}
+input[type=text],
+input[type=password],
+textarea {
+  margin-right: 10px;
+}
+.controls span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+}
