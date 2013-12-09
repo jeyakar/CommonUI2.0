@@ -1,0 +1,116 @@
+@import "vars.less";
+
+//general
+
+.float_left{float:left;}
+.float_right{float:right};
+.show{display:block;}
+.hide{display:none;}
+.clearfix() {
+  zoom: 1;
+  &:before { content: ''; display: block; }
+  &:after { content: ''; display: table; clear: both; }
+}
+
+
+body{
+    font-family:@pri_font_1;
+    font-size:@text_default;
+} 
+
+//headings
+h1{
+    font-size:@text_xxxl;
+    
+    font-weight:normal;
+    color:@tri_color_1;
+}
+
+h2{
+    font-size:@text_xxl;
+    font-weight:bold;
+    padding:10px 0px;
+}
+
+h3{
+    font-size:@text_xl;
+    font-weight:bold;
+    padding:10px 0px;
+}
+
+h4{
+    font-size:@text_l;
+    font-weight:bold;
+    padding:10px 0px;
+}
+
+
+[class^="icon-"], [class*=" icon-"]{
+    font-size:18px;
+    
+    &.small{
+        font-size:14px;
+    }
+}
+
+input[type=text], input[type=password], textarea, select{
+    font-family:@pri_font_1; 
+    font-size:@text_default;
+    padding:5px;
+    border:1px solid #aaa;
+    width:200px;
+    
+    &:focus{
+        outline:0;
+        border:1px solid @pri_color_2;
+        box-shadow:0px 0px 1px @pri_color_2;
+    }
+    
+    &:disabled{
+        background:#ddd;
+        color:#999;
+    }
+    
+    &.error{
+        border:1px solid red;
+        
+        &:focus{
+            outline:0;
+            box-shadow:0px 0px 2px red;
+        }
+    }
+}
+
+textarea{
+    height:80px;
+    resize:none;
+}
+
+.err_msg{
+    color:red;
+    
+    &.inline{
+        padding:5px 0px;
+    }
+}
+
+
+//layout specific
+header{
+    .clearfix();
+    background:@pri_color_2;
+    padding:10px;
+}
+#page_content{
+    .page_content, .left_page_content, .right_page_content{
+        min-height:500px;
+    }
+    .left_page_content{
+        width:70%;
+        float:left;
+    }
+    .right_page_content{
+        width:30%;
+        float:right;
+    }
+}
