@@ -48,7 +48,7 @@ body {
 h1 {
     font-size: @text_xxxl;
     font-weight: normal;
-    color: @tri_color_1;
+    color: @page_header_color;
 }
 
 h2 {
@@ -129,6 +129,7 @@ header {
 
 #page_content {
     min-width: 1000px;
+    background:@page_bg_color;
 
     .page_content, .left_page_content, .right_page_content {
         min-height: 500px;
@@ -137,11 +138,40 @@ header {
     .left_page_content {
         width: 70%;
         float: left;
-
     }
 
     .right_page_content {
         width: 30%;
         float: right;
+    }
+
+    .content_panel{
+        padding:10px;
+    }
+
+    .box_panel{
+        background:@box_bg_color;
+        
+        .header{
+            padding:5px;
+            background:@box_header_bg_color;
+            color:@box_header_color;
+
+            i{
+                margin-right:5px;
+            }
+
+            h3{
+                display:inline-block;
+                font-weight:normal;
+                font-size:@text_xl;
+            }
+
+
+            
+
+
+
+        }
     }
 }
