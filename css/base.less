@@ -53,14 +53,13 @@ h1 {
 
 h2 {
     font-size: @text_xxl;
-    font-weight: bold;
+    font-weight: normal;
     padding: 10px 0px;
 }
 
 h3 {
     font-size: @text_xl;
-    font-weight: bold;
-    padding: 10px 0px;
+    font-weight: normal;
 }
 
 h4 {
@@ -70,7 +69,7 @@ h4 {
 }
 
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="fa-"], [class*=" fa-"] {
     font-size: 18px;
 
     &.small {
@@ -130,6 +129,7 @@ header {
 #page_content {
     min-width: 1000px;
     background:@page_bg_color;
+    .clearfix;
 
     .page_content, .left_page_content, .right_page_content {
         min-height: 500px;
@@ -151,27 +151,45 @@ header {
 
     .box_panel{
         background:@box_bg_color;
+        .border-radius(6px,6px,6px,6px);
         
         .header{
-            padding:5px;
+            
             background:@box_header_bg_color;
             color:@box_header_color;
+            .border-radius(6px,0px,0px,6px);
+            .clearfix;
 
             i{
-                margin-right:5px;
+                padding-left:8px;
             }
 
             h3{
                 display:inline-block;
-                font-weight:normal;
-                font-size:@text_xl;
+                padding:8px 8px 8px 5px;
             }
 
+            .toggle{
+                float:right;
+                display:inline-block;
+                padding:7px 8px;
+                border-left:1px solid @box_header_color;
 
+                i{
+                    margin:0px;
+                    padding-left:0px;
+                }
+
+                &:hover{
+                    background:@pri_color_2;
+                    cursor:pointer;
+                    .border-radius(6px,0px,0px,0px);
+                }
+            }
+        }
+        .body{
+            padding:10px;
             
-
-
-
         }
     }
 }
