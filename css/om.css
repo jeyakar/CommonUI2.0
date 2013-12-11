@@ -1,1 +1,6 @@
-﻿
+﻿#page_content .box_panel .advanced_search {
+  padding-top: 35px;
+}
+#page_content .box_panel .selected_panel {
+  background: #ffd800;
+}

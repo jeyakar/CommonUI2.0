@@ -1481,6 +1481,18 @@ table {
 .hide {
   display: none;
 }
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before {
+  content: '';
+  display: block;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -1507,6 +1519,12 @@ h4 {
 label {
   display: block;
   padding: 10px 0px 5px 0px;
+}
+a {
+  color: #0097d1;
+}
+a:hover {
+  color: #024b89;
 }
 [class^="fa-"],
 [class*=" fa-"] {
@@ -1578,10 +1596,28 @@ header:after {
   display: table;
   clear: both;
 }
+header:before {
+  content: '';
+  display: block;
+}
+header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 #page_content {
   min-width: 1000px;
   background: #eeeeee;
   zoom: 1;
+}
+#page_content:before {
+  content: '';
+  display: block;
+}
+#page_content:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 #page_content:before {
   content: '';
@@ -1655,6 +1691,15 @@ header:after {
   display: table;
   clear: both;
 }
+#page_content .box_panel .header:before {
+  content: '';
+  display: block;
+}
+#page_content .box_panel .header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 #page_content .box_panel .header i {
   padding-left: 8px;
 }
@@ -1691,6 +1736,24 @@ header:after {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
 }
+#page_content .box_panel .header .actions {
+  float: right;
+  display: inline-block;
+  padding-top: 8px;
+}
+#page_content .box_panel .header .actions a {
+  color: #d6e6e9;
+  text-decoration: none;
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+#page_content .box_panel .header .actions a i {
+  font-size: 14px;
+}
+#page_content .box_panel .header .actions a:hover {
+  color: #ffffff;
+}
 #page_content .box_panel .body {
   padding: 10px;
   zoom: 1;
@@ -1704,8 +1767,35 @@ header:after {
   display: table;
   clear: both;
 }
+#page_content .box_panel .body:before {
+  content: '';
+  display: block;
+}
+#page_content .box_panel .body:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#page_content .box_panel .body h3 {
+  color: #000000;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+#page_content .box_panel .row:first-child {
+  padding-top: 0px;
+}
 #page_content .row {
   zoom: 1;
+  padding-top: 10px;
+}
+#page_content .row:before {
+  content: '';
+  display: block;
+}
+#page_content .row:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 #page_content .row:before {
   content: '';
@@ -1725,4 +1815,12 @@ header:after {
   float: left;
   width: 32.3%;
   padding: 0% 0.5%;
+}
+#page_content .left_wrapper {
+  float: left;
+  padding-right: 10px;
+}
+#page_content .right_wrapper {
+  float: right;
+  padding-left: 10px;
 }

@@ -23,7 +23,24 @@
     display: none;
 }
 
+
+
 .clearfix() {
+    zoom: 1;
+
+    &:before {
+        content: '';
+        display: block;
+    }
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+.clearfix {
     zoom: 1;
 
     &:before {
@@ -206,17 +223,18 @@ header {
                 padding-top:8px;
 
                 a{
-                    color:@box_header_color;
+                    color:@box_header_anchor_color;
                     text-decoration:none;
                     font-size:@text_default;
                     margin-right:10px;
+                    font-weight:bold;
 
                     i{
                         font-size:@text_l;
                     }
 
                     &:hover{
-
+                        color:@box_header_anchor_hover_color;    
                     }
                 }
             }
@@ -224,12 +242,23 @@ header {
         .body{
             padding:10px;
             .clearfix;
+
+            h3{
+                color:@box_sub_header_color;
+                padding-bottom:5px;
+                font-size:@text_l;
+            }
+        }
+
+        .row:first-child{
+            padding-top:0px;
         }
     }
 
 
     .row{
         .clearfix;
+        padding-top:10px;
     }
     .col2{
         float:left;
@@ -240,5 +269,13 @@ header {
         float:left;
         width:32.3%;
         padding:0% 0.5%;
+    }
+    .left_wrapper{
+        float:left;
+        padding-right:10px;
+    }
+    .right_wrapper{
+        float:right;
+        padding-left:10px;
     }
 }
