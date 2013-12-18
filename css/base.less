@@ -87,7 +87,7 @@ h4 {
 
 label{
     display:block;
-    padding:10px 0px 5px 0px;
+    padding-bottom:5px;
 }
 
 a{
@@ -105,6 +105,10 @@ a{
     &.small {
         font-size: 14px;
     }
+}
+
+.form_element{
+    padding:5px 0px;
 }
 
 input[type=text], input[type=password], textarea, select {
@@ -152,7 +156,7 @@ textarea {
 //layout specific
 header {
     .clearfix();
-    background: @pri_color_2;
+    background: @page_header_bg;
     padding: 10px;
 }
 
@@ -183,6 +187,7 @@ header {
     .box_panel{
         background:@box_bg_color;
         .border-radius(6px,6px,6px,6px);
+        border:1px solid @box_border_color;
         
         .header{
             
