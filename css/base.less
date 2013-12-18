@@ -248,11 +248,39 @@ header {
                 padding-bottom:5px;
                 font-size:@text_l;
             }
+            
+            .selected_item_panel{
+                background:@selected_item_panel_bg;
+                border:1px solid @selected_item_panal_border;
+                border-radius:5px;
+                padding:10px;
+                
+                h3{
+                    border-bottom:1px solid @selected_item_panal_border;
+                    padding-bottom:10px;
+                }
+                
+                .value_panel{
+                    padding-top:10px;
+                    .clearfix;
+                    
+                    >div{
+                        padding:0px 20px 0px 5px;
+                        line-height:20px;
+                        
+                        &:first-child{
+                            border-right:1px dashed @selected_item_panal_border;
+                        }
+                    }
+                }
+            }
         }
 
         .row:first-child{
             padding-top:0px;
         }
+        
+        
     }
 
 
