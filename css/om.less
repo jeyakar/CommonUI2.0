@@ -1,14 +1,50 @@
 @import "vars.less";
-
-
-#page_content {
-
+ #page_content {
     .box_panel {
-
         .advanced_search {
             padding-top: 35px;
         }
-
-        
+    }
+}
+.accounts {
+    h3 {
+        border-bottom: 1px solid #DDD;
+        padding-bottom: 10px;
+    }
+    .account_list {
+        clear: both;
+        display: block;
+        padding: 10px 0px 0px 0px;
+        border-bottom: 1px solid #DDD;
+        input {
+            float: left;
+        }
+        label {
+            cursor: pointer;
+        }
+        span {
+            display: block;
+            padding-bottom: 5px;
+        }
+        .account_name {
+            width: 20%;
+            float: left;
+            padding: 0px 10px 0px 10px;
+            .unique_id {
+                display: inline-block;
+            }
+        }
+        .account_address {
+            float: left;
+            width: 18%;
+            padding: 0px 10px 0px 0px;
+            .country_postcode, .country_code {
+                display: inline-block;
+            }
+        }
+        .country_flag {
+            float: left;
+            width: 100px;
+        }
     }
 }
