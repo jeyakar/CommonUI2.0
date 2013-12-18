@@ -12,18 +12,27 @@
 .accounts .account_list {
   clear: both;
   display: block;
-  padding: 10px 0px 0px 0px;
-  border-bottom: 1px solid #DDD;
+  padding: 0px;
 }
 .accounts .account_list input {
   float: left;
+  margin-top: 12px;
 }
 .accounts .account_list label {
   cursor: pointer;
+  padding: 10px 0px 0px 0px;
+  border-bottom: 1px solid #DDD;
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+.accounts .account_list label:hover {
+  background: #EEE;
+  border-color: #DDD;
 }
 .accounts .account_list span {
   display: block;
   padding-bottom: 5px;
+  line-height: 16px;
 }
 .accounts .account_list .account_name {
   width: 20%;
