@@ -59,6 +59,7 @@
 body {
     font-family: @pri_font_1;
     font-size: @text_default;
+    color:@text_color;
 }
 
 //headings
@@ -109,6 +110,18 @@ a{
 
 .form_element{
     padding:5px 0px;
+    
+    &.iconic{
+        i{
+            position:absolute;
+            margin:4px 0px 0px 5px;
+            color:@form_element_icon_color;
+        }
+        input{
+            width:180px;
+            padding-left:25px;
+        }
+    }
 }
 
 input[type=text], input[type=password], textarea, select {
