@@ -22,6 +22,15 @@
 .hide {
     display: none;
 }
+.align_center{
+    text-align:center;
+}
+.align_left{
+    text-align:left;
+}
+.align_right{
+    text-align:right;
+}
 
 
 
@@ -150,6 +159,17 @@ input[type=text], input[type=password], textarea, select {
             box-shadow: 0px 0px 2px red;
         }
     }
+    
+    &.xxxs{
+        width:40px;
+    }
+    
+    &.xxs{
+        width:70px;
+    }
+    &.xs{
+        width:100px;
+    }
 }
 
 textarea {
@@ -169,6 +189,7 @@ textarea {
     background:@table_bg;
     border-spacing:1px;
     border-collapse:separate;
+    width:100%;
     
     th, td{
         padding:5px;
@@ -187,10 +208,15 @@ textarea {
         background:@table_odd_cells_bg;
         }
     }
+    
+    input[type=text],select{
+        padding:2px;
+    }
 }
 
 
-
+//Icons
+.fa-trash-o{color:red;}
 
 //layout specific
 header {
