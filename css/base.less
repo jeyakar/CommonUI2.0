@@ -291,21 +291,26 @@ header {
             .actions{
                 float:right;
                 display:inline-block;
-                padding-top:8px;
+                margin-top:8px;
 
                 a{
                     color:@box_header_anchor_color;
+                    background:@box_header_anchor_bg;
                     text-decoration:none;
                     font-size:@text_default;
                     margin-right:10px;
-                    font-weight:bold;
+                    padding:3px 5px;
+                    border-radius:5px;
+                    border:1px solid @box_header_anchor_border;
 
                     i{
                         font-size:@text_l;
+                        padding:0px 5px 0px 0px;
                     }
 
                     &:hover{
-                        color:@box_header_anchor_hover_color;    
+                        color:@box_header_anchor_hover_color; 
+                        background:@box_header_anchor_hover_bg;
                     }
                 }
             }
