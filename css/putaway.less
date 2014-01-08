@@ -2,11 +2,11 @@
 @import "less-mixins.less";
 @import "useful.less";
 
-@pa_item_border_color:#ddd;
+
 
 .pa_item{
     padding:5px;
-    border:1px solid @pa_item_border_color;
+    border:1px solid @sec_color_7;
     .border-radius(5px,5px,5px,5px);
     
     .name{
@@ -16,6 +16,7 @@
     
     .pa_item_details{
         padding:10px 0px;
+        line-height:18px;
         .clearfix;
         
         .created_info{
@@ -23,12 +24,47 @@
             width:80%;
             .key{
                 display:inline-block;
-                width:30%;
+                width:25%;
             }
             .value{
-                color:
-                width:70%;
+               color:@sec_color_6;
             }
         }
+        
+        .stats{
+            float:right;
+            padding-top:8px;
+            
+            span{
+                
+                border-radius: 5px;
+                color: #434040;
+                display: inline-block;
+                font-size: 0.9em;
+                margin: 0 2px;
+                padding: 1px 0;
+                text-align: center;
+                width: 30px;
+                
+                &.easy{
+                    background: -moz-linear-gradient(center bottom , #BAE59B 0%, #B2DC94 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                    border: 1px solid #579100;
+                }
+                
+                &.difficult{
+                    background: -moz-linear-gradient(center bottom , #F5A965 0%, #F88B2A 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                    border: 1px solid #D27827;
+                }
+            }
+        }
+        
+        
     }
+    .btn_panel{
+        border-top:1px solid @sec_color_8;
+        padding-top:5px;
+            a{
+                margin-right:5px;
+            }
+        }
 }

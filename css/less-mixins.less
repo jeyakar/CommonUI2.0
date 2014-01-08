@@ -145,3 +145,19 @@
 	-moz-box-sizing: @sizing;
 	box-sizing: @sizing;
 }
+
+/* Clearfix class added here so that it can be used as mixin in needed less files*/
+.clearfix {
+    zoom: 1;
+
+    &:before {
+        content: '';
+        display: block;
+    }
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
