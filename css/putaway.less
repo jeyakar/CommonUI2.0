@@ -1,0 +1,32 @@
+@import "vars.less";
+@import "less-mixins.less";
+@import "useful.less";
+
+@pa_item_border_color:#ddd;
+
+.pa_item{
+    padding:5px;
+    border:1px solid @pa_item_border_color;
+    .border-radius(5px,5px,5px,5px);
+    
+    .name{
+        font-size:@text_xl;
+        text-decoration:none;
+    }
+    
+    .pa_item_details{
+        padding:10px 0px;
+        .clearfix;
+        
+        .created_info{
+            float:left;
+            .key{
+                display:inline-block;
+                width:30%;
+            }
+            .value{
+                width:70%;
+            }
+        }
+    }
+}

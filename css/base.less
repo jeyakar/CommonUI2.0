@@ -4,66 +4,7 @@
 //don't Remove this import
 @import "vars.less";
 @import "less-mixins.less";
-
-//general
-
-.float_left {
-    float: left;
-}
-
-.float_right {
-    float: right;
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
-.align_center{
-    text-align:center;
-}
-.align_left{
-    text-align:left;
-}
-.align_right{
-    text-align:right;
-}
-
-
-
-.clearfix() {
-    zoom: 1;
-
-    &:before {
-        content: '';
-        display: block;
-    }
-
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
-
-.clearfix {
-    zoom: 1;
-
-    &:before {
-        content: '';
-        display: block;
-    }
-
-    &:after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-}
-
+@import "useful.less";
 
 body {
     font-family: @pri_font_1;
@@ -221,10 +162,16 @@ textarea {
 header {
     .clearfix();
     background: @page_header_bg;
-    padding: 10px;
+    border-bottom:3px solid @page_header_border;
+    padding:8px 10px 10px;
+    
+    h1{
+        font-size:@text_xxl;
+    }
 }
 
 #page_content {
+    border-top:1px solid @page_content_top_border;
     min-width: 1000px;
     background:@page_bg_color;
     .clearfix;
@@ -246,6 +193,10 @@ header {
 
     .content_panel{
         padding:10px;
+    }
+    
+    .filter_panel{
+        
     }
 
     .box_panel{
