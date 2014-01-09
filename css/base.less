@@ -4,7 +4,7 @@
 //don't Remove this import
 @import "vars.less";
 @import "less-mixins.less";
-@import "useful.less";
+
 
 body {
     font-family: @pri_font_1;
@@ -45,7 +45,8 @@ a{
     color:@anchor_color;
 
     &:hover{
-        color:@anchor_hover_color;
+        color:darken(@anchor_color,8%);
+        -moz-transform:scale(2,2);
     }
 }
 
@@ -118,6 +119,20 @@ textarea {
     resize: none;
 }
 
+input[type=button], input[type=submit], button, .button{
+    .gradient(@sec_color_4,@sec_color_3,@sec_color_4);
+    padding:5px 10px;
+    border:1px solid @sec_color_3;
+    .border-radius(5px,5px,5px,5px);
+    color:@sec_color_7;
+    
+    &:hover{
+        color:@sec_color_9;
+        cursor:pointer;
+        .gradient(@sec_color_3,@sec_color_2,@sec_color_4);
+    }
+}
+
 .err_msg {
     color: red;
 
@@ -156,7 +171,14 @@ textarea {
 
 
 //Icons
-.fa-trash-o{color:red;}
+.fa-trash-o{
+    color:red;
+    &:hover{
+        color:darken(red,10%);
+    }
+
+}
+
 
 //layout specific
 header {

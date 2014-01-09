@@ -1,22 +1,21 @@
 @import "vars.less";
 @import "less-mixins.less";
-@import "useful.less";
-
-
 
 .pa_item{
-    padding:5px;
-    border:1px solid @sec_color_7;
+    padding:8px;
+    border:1px solid tint(@pri_color_2,80%);    
+    .gradient(tint(@pri_color_2,95%),tint(@pri_color_2,95%),@sec_color_9);
     .border-radius(5px,5px,5px,5px);
+    margin-bottom:10px;
     
     .name{
-        font-size:@text_xl;
+        font-size:@text_l;
         text-decoration:none;
     }
     
     .pa_item_details{
-        padding:10px 0px;
-        line-height:18px;
+        padding:8px 0px;
+        line-height:16px;
         .clearfix;
         
         .created_info{
@@ -35,8 +34,7 @@
             float:right;
             padding-top:8px;
             
-            span{
-                
+            span{                
                 border-radius: 5px;
                 color: #434040;
                 display: inline-block;
@@ -61,10 +59,19 @@
         
     }
     .btn_panel{
-        border-top:1px solid @sec_color_8;
-        padding-top:5px;
             a{
                 margin-right:5px;
             }
+            .completed_on{
+                float:right;
+                font-size:@text_s;
+                color:@sec_color_6;
+                font-style:italic;
+                padding-top:6px;
+            }
         }
+    
+    &:last-child{
+        margin-bottom:0px;
+    }
 }
