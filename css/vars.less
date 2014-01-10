@@ -4,14 +4,14 @@
 @pri_color_3: #ffd727;
 
 @sec_color_1: #000;
-@sec_color_2: #111;
-@sec_color_3: #333;
-@sec_color_4: #666;
-@sec_color_5: #999;
-@sec_color_6: #aaa;
-@sec_color_7: #ddd;
-@sec_color_8: #eee;
-@sec_color_9: #fff;
+@sec_color_2: tint(@sec_color_1,10%);
+@sec_color_3: tint(@sec_color_1,20%);
+@sec_color_4: tint(@sec_color_1,40%);
+@sec_color_5: tint(@sec_color_1,60%);
+@sec_color_6: tint(@sec_color_1,70%);
+@sec_color_7: tint(@sec_color_1,80%);
+@sec_color_8: tint(@sec_color_1,90%);
+@sec_color_9: tint(@sec_color_1,100%);
 
 
 /* ---------------------------- vars ---------------------------- */
@@ -50,7 +50,6 @@
 @selected_item_panel_bg                 : tint(@pri_color_3,90%);
 @selected_item_arrow_panel_bg           : @pri_color_3;
 @selected_item_panal_border             : @pri_color_3;
-
 
 /* font */
 @pri_font_1: Arial,Helvetica,sans-serif;
